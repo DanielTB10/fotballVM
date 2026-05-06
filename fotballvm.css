@@ -1,0 +1,42 @@
+ body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background-color: #ffffff;
+     color: white;
+ }
+
+ .forside {
+     height: 100vh;
+     background-image: url("fotballvm1.png");
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     position: relative;
+ }
+
+ .forside::before {
+     content: "";
+     position: absolute;
+     inset: 0;
+     background: rgba(0, 0, 0, 0.45);
+ }
+
+ .innhold {
+     position: relative;
+     z-index: 1;
+ }
+
+ h1 {
+     font-size: 80px;
+     margin: 0;
+     letter-spacing: 5px;
+     text-transform: uppercase;
+ }
+
+ p {
+     font-size: 25px;
+     margin-top: 15px;
+ }
