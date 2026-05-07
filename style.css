@@ -7,7 +7,7 @@
 
  .forside {
      height: 100vh;
-     background-image: url("fotballvm1.png");
+     background-image: url("bilder/fotballvm1.png");
      background-size: cover;
      background-position: center;
      display: flex;
@@ -36,7 +36,24 @@
      text-transform: uppercase;
  }
 
+ h3 {
+     font-size: 25px;
+     margin-top: 15px;
+     color: rgb(255, 255, 255);
+
+ }
+
  p {
      font-size: 25px;
      margin-top: 15px;
+     color: rgb(0, 0, 0);
+ }
+
+ h2 {
+     font-size: 30px;
+     margin: 0;
+     letter-spacing: 5px;
+     text-transform: uppercase;
+     color: black;
+
  }
