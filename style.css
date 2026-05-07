@@ -49,7 +49,7 @@
  }
 
  .main-nav a:hover {
-     color: #293ca9;
+     color: #4f69ff;
  }
 
  .forside {
@@ -94,6 +94,7 @@
  p {
      font-size: 25px;
      margin-top: 15px;
+
      color: rgb(0, 0, 0);
  }
 
@@ -138,6 +139,7 @@
      line-height: 1.5;
      color: #222;
      margin-bottom: 20px;
+
  }
 
  .infobilder {
@@ -148,7 +150,7 @@
 
  .bildeboks {
      width: 350px;
-     height: 210px;
+     height: 250px;
      background-color: #d8e4f0;
      border-radius: 15px;
      overflow: hidden;
@@ -164,4 +166,22 @@
 
  .bildeboks img:hover {
      transform: scale(1.03);
+ }
+
+ .footer {
+     background-color: #07182f;
+     text-align: center;
+     padding: 20px 15px;
+ }
+
+ .footer h3 {
+     color: white;
+     font-size: 25px;
+     margin-bottom: 10px;
+ }
+
+ .footer p {
+     color: #d7d7d7;
+     font-size: 15px;
+     margin: 5px 0;
  }
