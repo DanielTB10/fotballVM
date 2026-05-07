@@ -49,12 +49,12 @@
  }
 
  .main-nav a:hover {
-     color: #7dd3ff;
+     color: #293ca9;
  }
 
  .forside {
      min-height: 100vh;
-     padding-top: 90px;
+     padding-top: 100px;
      background-image: url("bilder/fotballvm1.png");
      background-size: cover;
      background-position: center;
@@ -111,7 +111,7 @@
      padding: 100px 60px;
      background-color: #f4f7fb;
      color: black;
-
+     flex-wrap: wrap;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -120,13 +120,17 @@
 
  .infotekst {
      max-width: 550px;
+     padding-right: 10px;
  }
 
  .infotekst h2 {
      font-size: 35px;
      margin-bottom: 25px;
-     letter-spacing: 2px;
+     letter-spacing: 5px;
      color: #07182f;
+     border-bottom: 3px solid #293ca9;
+     display: inline-block;
+     padding-bottom: 5px;
  }
 
  .infotekst p {
@@ -134,4 +138,30 @@
      line-height: 1.5;
      color: #222;
      margin-bottom: 20px;
+ }
+
+ .infobilder {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+ }
+
+ .bildeboks {
+     width: 350px;
+     height: 210px;
+     background-color: #d8e4f0;
+     border-radius: 15px;
+     overflow: hidden;
+     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+ }
+
+ .bildeboks img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+     transition: 0.3s;
+ }
+
+ .bildeboks img:hover {
+     transform: scale(1.03);
  }
