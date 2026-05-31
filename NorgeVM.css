@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #111;
+}
+
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(5, 15, 30, 0.80);
+    padding: 15px 30px;
+    z-index: 100;
+}
+
+.header-inner {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.main-nav {
+    display: flex;
+    gap: 25px;
+}
+
+.main-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.main-nav a:hover {
+    color: #4f69ff;
+}
+
+.toppside {
+    min-height: 60vh;
+    background-image: url("bilder/halland1.png");
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.topptekst {
+    background-color: rgba(0, 0, 0, 0.55);
+    padding: 35px;
+    border-radius: 15px;
+    color: white;
+}
+
+.toppside h1 {
+    font-size: 55px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.toppside p {
+    font-size: 22px;
+}
