@@ -6,19 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>fotballvm</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
 
     <header class="site-header">
         <div class="header-inner">
-            <a href="#home" class="logo">Fotball VM</a>
+            <button onclick="byttModus()">Bytt lys/mørk</button>
+            <a href="#index.html" class="logo">Fotball VM</a>
 
             <nav class="main-nav">
-                <a href="#home">Hjem</a>
-                <a href="#norge">Norge i VM</a>
-                <a href="#kamper">Kamper</a>
-                <a href="#tabell">Tabell</a>
+                <a href="index.html">Hjem</a>
+                <a href="norgevm.html">Norge i VM</a>
+                <a href="tabell.html">Tabell</a>
             </nav>
 
         </div>
@@ -39,12 +45,17 @@
                 Det blir et stort mesterskap med mange land fra hele verden.
                 VM er en av de største sportsbegivenhetene i verden.
             </p>
+            <span id="mer" style="display: none;">
+                <p>
+                    Norge er kvalifisert til VM 2026 og mange har store forventninger til laget.
+                    Med spillere som Erling Braut Haaland og Martin Ødegaard har Norge et av de
+                    sterkeste lagene de har hatt på lenge.
+                </p>
+            </span>
 
-            <p>
-                Norge er kvalifisert til VM 2026 og mange har store forventninger til laget.
-                Med spillere som Erling Braut Haaland og Martin Ødegaard har Norge et av de
-                sterkeste lagene de har hatt på lenge.
-            </p>
+            <button onclick="lesMer()">Les mer</button>
+
+
             <p class="bildetekst">Norge er klare for VM 2026</p>
 
         </div>
@@ -71,6 +82,8 @@
 
         </p>
     </footer>
+    <script src="lesmer.js"></script>
+    <script src="byttmodus.js"></script>
 </body>
 
 </html>

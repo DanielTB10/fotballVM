@@ -1,187 +1,236 @@
- body {
-     margin: 0;
-     font-family: Arial, sans-serif;
-     background-color: #ffffff;
-     color: white;
- }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
- .site-header {
-     position: fixed;
-     top: 0;
-     left: 0;
-     width: 100%;
-     background-color: rgba(5, 15, 30, 0.75);
-     backdrop-filter: blur(10px);
-     padding: 15px 30px;
-     z-index: 100;
- }
+:root {
+    --farge1: #000000;
+    --farge2: #ffffff;
+    --farge3: #050F1EBF;
+    --farge4: #4f69ff;
+    --farge5: #d7d7d7;
+}
 
- .header-inner {
-     max-width: 1150px;
-     margin: auto;
-     display: flex;
-     justify-content: space-between;
-     align-items: center;
- }
 
- .logo {
-     color: white;
-     text-decoration: none;
-     font-size: 25px;
-     font-weight: 700;
-     font-family: Arial, Helvetica, sans-serif;
-     letter-spacing: 1.5px;
- }
 
- .main-nav {
-     display: flex;
-     align-items: center;
-     gap: 25px;
- }
 
- .main-nav a {
-     color: white;
-     text-decoration: none;
-     font-size: 15px;
-     font-weight: 500;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
-     transition: 0.2s ease;
- }
+img {
+    display: block;
+    max-width: 100%;
 
- .main-nav a:hover {
-     color: #4f69ff;
- }
+}
 
- .forside {
-     min-height: 100vh;
-     padding-top: 100px;
-     background-image: url("bilder/fotballvm1.png");
-     background-size: cover;
-     background-position: center;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     text-align: center;
-     position: relative;
- }
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--farge1);
+    color: var(--farge2);
+}
 
- .forside::before {
-     content: "";
-     position: absolute;
-     inset: 0;
-     background: rgba(0, 0, 0, 0.45);
- }
+body.darkmode {
+    --farge1: #ffffff;
+    --farge2: #000000;
+    --farge3: #d7d7d7;
+    --farge4: #7d91ff;
+    --farge5: #333333;
+}
 
- .innhold {
-     position: relative;
-     z-index: 1;
- }
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--farge3);
+    backdrop-filter: blur(10px);
+    padding: 15px 30px;
+    z-index: 100;
+}
 
- h1 {
-     font-size: 80px;
-     margin: 0;
-     letter-spacing: 5px;
-     text-transform: uppercase;
- }
+.header-inner {
+    max-width: 1150px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
- h3 {
-     font-size: 25px;
-     margin-top: 15px;
-     color: rgb(255, 255, 255);
+.logo {
+    color: var(--farge2);
+    ;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Verdana;
+    letter-spacing: 1.5px;
+}
 
- }
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
 
- p {
-     font-size: 25px;
-     margin-top: 15px;
+.main-nav a {
+    color: var(--farge2);
+    ;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.2s ease;
+}
 
-     color: rgb(0, 0, 0);
- }
+.main-nav a:hover {
+    color: var(--farge4);
+    ;
+}
 
- h2 {
-     font-size: 30px;
-     margin: 0;
-     letter-spacing: 5px;
-     text-transform: uppercase;
-     color: black;
+.forside {
+    min-height: 100vh;
+    padding-top: 100px;
+    background-image: url("bilder/fotballvm1.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
 
- }
+.forside::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: var(--farge3);
+}
 
- .infoside {
-     min-height: 80vh;
-     padding: 100px 60px;
-     background-color: #f4f7fb;
-     color: black;
-     flex-wrap: wrap;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     gap: 60px;
- }
+.innhold {
+    position: relative;
+    z-index: 1;
+}
 
- .infotekst {
-     max-width: 550px;
-     padding-right: 10px;
- }
+h1 {
+    font-size: 80px;
+    margin: 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-family: "Black Ops One", Verdana;
+}
 
- .infotekst h2 {
-     font-size: 35px;
-     margin-bottom: 25px;
-     letter-spacing: 5px;
-     color: #07182f;
-     border-bottom: 3px solid #293ca9;
-     display: inline-block;
-     padding-bottom: 5px;
- }
+h3 {
+    font-size: 25px;
+    margin-top: 15px;
+    color: var(--farge2);
 
- .infotekst p {
-     font-size: 20px;
-     line-height: 1.5;
-     color: #222;
-     margin-bottom: 20px;
+}
 
- }
+p {
+    font-size: 25px;
+    margin-top: 15px;
 
- .infobilder {
-     display: flex;
-     flex-direction: column;
-     gap: 20px;
- }
+}
 
- .bildeboks {
-     width: 350px;
-     height: 250px;
-     background-color: #d8e4f0;
-     border-radius: 15px;
-     overflow: hidden;
-     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
- }
+h2 {
+    font-size: 30px;
+    margin: 0;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: var(--farge1);
 
- .bildeboks img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     transition: 0.3s;
- }
+}
 
- .bildeboks img:hover {
-     transform: scale(1.03);
- }
+.infoside {
+    min-height: 80vh;
+    padding: 100px 60px;
+    background-color: var(--farge2);
+    color: var(--farge1);
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
 
- .footer {
-     background-color: #07182f;
-     text-align: center;
-     padding: 20px 15px;
- }
+.infotekst {
+    max-width: 550px;
+    padding-right: 10px;
+}
 
- .footer h3 {
-     color: white;
-     font-size: 25px;
-     margin-bottom: 10px;
- }
+.infotekst h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+    color: var(--farge3);
+    border-bottom: 3px solid var(--farge4);
+    display: inline-block;
+    padding-bottom: 5px;
+}
 
- .footer p {
-     color: #d7d7d7;
-     font-size: 15px;
-     margin: 5px 0;
- }
+.infotekst p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: var(--farge1);
+    margin-bottom: 20px;
+
+}
+
+.infobilder {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bildeboks {
+    width: 350px;
+    height: 250px;
+    background-color: var(--farge5);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px var(--farge1);
+}
+
+.bildeboks img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.bildeboks img:hover {
+    transform: scale(1.03);
+}
+
+.footer {
+    background-color: var(--farge3);
+    text-align: center;
+    padding: 20px 15px;
+}
+
+.footer h3 {
+    color: var(--farge2);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: var(--farge5);
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+
+@media (max-width: 700px) {
+    body {
+        font-size: 16px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+}

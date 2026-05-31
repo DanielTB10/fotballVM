@@ -1,0 +1,84 @@
+:root {
+    --farge1: #000000;
+    --farge2: #ffffff;
+    --farge3: #050F1EBF;
+    --farge4: #4f69ff;
+    --farge5: #d7d7d7;
+}
+
+.tabellside {
+    max-width: 1200px;
+    margin: auto;
+    padding: 130px 25px 70px 25px;
+}
+
+.tabell-info {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.tabell-info h1 {
+    font-size: 45px;
+    margin: 0;
+    color: var(--farge1);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.tabell-info p {
+    font-size: 18px;
+    line-height: 1.5;
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    color: var(--farge1);
+}
+
+.alle-grupper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+
+.gruppeboks {
+    background-color: var(--farge2);
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px var(--farge1);
+}
+
+.gruppeboks h2 {
+    color: var(--farge1);
+    margin-top: 0;
+
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.norge-gruppe {
+    border: 3px solid var(--farge5);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th {
+    background-color: var(--farge3);
+    color: var(--farge2);
+    padding: 10px;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid var(--farge5);
+    color: var(--farge1);
+}
+
+tr:hover {
+    background-color: var(--farge5);
+}
