@@ -73,3 +73,126 @@ body {
 .toppside p {
     font-size: 22px;
 }
+
+.innhold {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 25px;
+}
+
+.infoside {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+.infotekst {
+    flex: 1;
+}
+
+.infotekst h2 {
+    color: #07182f;
+    border-bottom: 3px solid #293ca9;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.infotekst p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.bildeboks {
+    flex: 1;
+}
+
+.bildeboks img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.spillere {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 25px 70px 25px;
+}
+
+.spillere h2 {
+    color: #07182f;
+    border-bottom: 3px solid #293ca9;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.spiller-rad {
+    display: flex;
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.spiller-kort {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 33%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.spiller-kort img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.spiller-kort h3 {
+    color: #07182f;
+}
+
+.spiller-kort p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer {
+    background-color: #07182f;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #d7d7d7;
+    font-size: 15px;
+}
+
+.norge-kamper {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 25px 70px 25px;
+}
+
+.norge-kamper h2 {
+    color: #07182f;
+    border-bottom: 3px solid #293ca9;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.kampboks {
+    background-color: white;
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 6px solid #293ca9;
+}
+
+.kampboks p {
+    font-size: 18px;
+    color: #111;
+}
