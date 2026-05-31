@@ -55,6 +55,11 @@ body.darkmode {
     align-items: center;
 }
 
+.header-inner button {
+    font-size: 20px;
+
+}
+
 .logo {
     color: var(--farge2);
     ;

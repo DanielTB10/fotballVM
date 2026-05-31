@@ -1,6 +1,6 @@
 function lesMer() {
     let mer = document.getElementById("mer");
-    let knapp = document.querySelector("button");
+    let knapp = document.getElementById("knapp");
 
     if (mer.style.display === "none") {
         mer.style.display = "inline";
