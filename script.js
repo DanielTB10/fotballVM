@@ -19,6 +19,16 @@ document.querySelector("header").innerHTML = `
     
 `;
 
+document.querySelector("footer").innerHTML = `
+        <h3>Fotball VM</h3>
+
+        <p>
+            Laget av Daniel om Fotball VM 2026.
+        </p> `;
+
+
+
+
 
 /*
 *************
