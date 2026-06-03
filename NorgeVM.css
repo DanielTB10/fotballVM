@@ -1,6 +1,6 @@
 .toppside {
     min-height: 60vh;
-    background-image: url("bilder/halland1.png");
+    background-image: url("bilder/halland3.png");
     background-size: cover;
     background-position: center;
     padding-top: 100px;
@@ -115,6 +115,7 @@
     max-width: 350px;
     margin: auto;
     padding: 0 25px 70px 25px;
+    background-color: var(--farge1);
 }
 
 .norge-kamper h2 {
@@ -125,15 +126,23 @@
 }
 
 .kampboks {
-    background-color: var(--farge2);
     margin-top: 25px;
     padding: 20px;
     border-radius: 15px;
-    border-left: 5px solid var(--farge4);
-    box-shadow: 0 4px 10px var(--farge1);
+    background-color: var(--farge1);
+    box-shadow: 0 4px 10px var(--farge2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flag {
+    width: 100px;
+    height: auto;
+    border-radius: 20px;
 }
 
 .kampboks p {
     font-size: 18px;
-    color: var(--farge1);
+    color: var(--farge2);
 }
