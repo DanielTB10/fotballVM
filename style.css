@@ -37,8 +37,6 @@ body.darkmode {
 
 .site-header {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     background-color: var(--farge3);
     backdrop-filter: blur(10px);
@@ -160,7 +158,6 @@ h2 {
     padding: 100px 60px;
     background-color: var(--farge2);
     color: var(--farge1);
-    flex-wrap: wrap;
     display: flex;
     justify-content: center;
     align-items: center;
