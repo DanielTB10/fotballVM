@@ -64,11 +64,16 @@ body.darkmode {
     padding: 10px 20px;
 }
 
+button:hover,
+.main-nav a:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 
 
 .logo {
     color: var(--farge2);
-    ;
     text-decoration: none;
     font-size: 25px;
     font-weight: 700;
@@ -84,7 +89,6 @@ body.darkmode {
 
 .main-nav a {
     color: var(--farge2);
-    ;
     text-decoration: none;
     font-size: 15px;
     font-weight: 500;
@@ -94,7 +98,6 @@ body.darkmode {
 
 .main-nav a:hover {
     color: var(--farge4);
-    ;
 }
 
 .forside {
@@ -248,16 +251,41 @@ h2 {
 }
 
 
-@media (max-width: 700px) {
-    body {
-        font-size: 16px;
+@media (max-width: 800px) {
+    .site-header {
+        position: static;
+        padding: 15px;
     }
 
-    main {
-        padding: 10px;
-    }
-
-    nav {
+    .header-inner {
         flex-direction: column;
+        gap: 15px;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .forside {
+        padding-top: 40px;
+    }
+
+    .infoside {
+        padding: 50px 20px;
+        flex-direction: column;
+    }
+
+    .bildeboks {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    p {
+        font-size: 18px;
     }
 }

@@ -90,7 +90,7 @@
     background-color: var(--farge1);
     padding: 20px;
     border-radius: 15px;
-    width: 33%;
+    width: 30%;
     box-shadow: 0 4px 10px var(--farge2);
 }
 
@@ -145,4 +145,26 @@
 .kampboks p {
     font-size: 18px;
     color: var(--farge2);
+}
+
+@media (max-width: 800px) {
+    .toppside h1 {
+        font-size: 38px;
+    }
+
+    .infoside2 {
+        flex-direction: column;
+    }
+
+    .spiller-rad {
+        flex-direction: column;
+    }
+
+    .spiller-kort {
+        width: 100%;
+    }
+
+    .norge-kamper {
+        max-width: 100%;
+    }
 }
