@@ -58,19 +58,19 @@ function flyttBallAutomatisk() {
 document.addEventListener("keydown", function (event) {
     brukerStyrer = true;
 
-    if (event.key === "h") {
+    if (event.key === "s") {
         x += 10;
     }
 
-    if (event.key === "v") {
+    if (event.key === "a") {
         x -= 10;
     }
 
-    if (event.key === "o") {
+    if (event.key === "w") {
         y -= 10;
     }
 
-    if (event.key === "n") {
+    if (event.key === "z") {
         y += 10;
     }
 
